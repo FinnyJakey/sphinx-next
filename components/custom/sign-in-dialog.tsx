@@ -9,7 +9,7 @@ import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import SignUpDialog from "@/components/custom/sign-up-dialog";
-import { signInWithEmailAndPassword } from "@firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase/firebase-client";
 import { useRouter } from "next/navigation";
 
@@ -109,7 +109,7 @@ export default function SignInDialog({
 
             <div className="flex justify-between pt-2">
               <div className="flex items-center">
-                <DialogDescription>Don't have account?</DialogDescription>
+                <DialogDescription>Do not have an account?</DialogDescription>
                 <Button
                   variant="link"
                   size="sm"

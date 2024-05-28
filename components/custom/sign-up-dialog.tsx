@@ -9,7 +9,7 @@ import {
 import { Dispatch, FormEvent, SetStateAction, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { createUserWithEmailAndPassword } from "@firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase/firebase-client";
 import { useRouter } from "next/navigation";
 
@@ -80,10 +80,6 @@ export default function SignUpDialog({
           createdAt: new Date(),
         }),
       });
-
-      if (response.status != 200) {
-        throw new Error("Sign Up Error ");
-      }
 
       router.replace("/projects");
     } catch (error) {

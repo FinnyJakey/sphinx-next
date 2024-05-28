@@ -13,7 +13,7 @@ import { FolderOpenDot, LogIn, LogOut, User as UserIcon } from "lucide-react";
 import { auth } from "@/firebase/firebase-client";
 import { useEffect, useState } from "react";
 import SignInDialog from "@/components/custom/sign-in-dialog";
-import { User } from "@firebase/auth";
+import { User } from "firebase/auth";
 import { useRouter } from "next/navigation";
 
 export default function ProfileDropdownMenu() {
